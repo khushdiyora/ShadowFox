@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - [IPL Team]</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Bootstrap font stack */
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .player-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .player-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+        }
+        .player-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .player-card h3 {
+            margin-top: 10px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .player-card p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .player-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/ipl.png" alt="IPL Logo" style="height: 40px; margin-right: 10px;">
+                Indian Premier League
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Match Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="winners.html">IPL Winners</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section>
+            <h2 class="text-center mb-4">Player Profiles</h2>
+            <div class="player-grid">
+                <!-- Player 1 -->
+                <div class="player-card">
+                    <img src="images/player1.jpg" alt="Virat Kohli">
+                    <h3>Virat Kohli</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 7500, Avg - 52.65</p>
+                </div>
+                <div class="player-card">
+                    <img src="images/player31.jpg" alt="Faf du Plessis">
+                    <h3>Faf du Plessis</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 3000, Avg - 40.12</p>
+                </div>
+                <div class="player-card">
+                    <img src="images/player32.jpg" alt="Glenn Maxwell">
+                    <h3>Glenn Maxwell</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 2000, Avg - 35.00</p>
+                </div>
+                <div class="player-card">
+                    <img src="images/player33.jpg" alt="Rajat Patidar">
+                    <h3>Rajat Patidar</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 1200, Avg - 35.00</p>
+                </div>
+                <!-- Player 2 -->
+                <div class="player-card">
+                    <img src="images/player2.jpg" alt="MS Dhoni">
+                    <h3>MS Dhoni</h3>
+                    <p>Position: Wicketkeeper-Batsman</p>
+                    <p>Stats: Runs - 5000, Avg - 45.67, Dismissals - 200</p>
+                </div>
+                <!-- Player 3 -->
+                <div class="player-card">
+                    <img src="images/player3.jpg" alt="Rohit Sharma">
+                    <h3>Rohit Sharma</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 6800, Avg - 48.32</p>
+                </div>
+                <!-- Player 4 -->
+                <div class="player-card">
+                    <img src="images/player4.jpg" alt="Jasprit Bumrah">
+                    <h3>Jasprit Bumrah</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 250, Econ - 4.50</p>
+                </div>
+                <!-- Player 5 -->
+                <div class="player-card">
+                    <img src="images/player5.jpg" alt="Hardik Pandya">
+                    <h3>Hardik Pandya</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 2200, Wickets - 120</p>
+                </div>
+                <!-- Player 6 -->
+                <div class="player-card">
+                    <img src="images/player6.jpg" alt="KL Rahul">
+                    <h3>KL Rahul</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 4000, Avg - 42.85</p>
+                </div>
+                <!-- Player 7 -->
+                <div class="player-card">
+                    <img src="images/player7.jpg" alt="Shikhar Dhawan">
+                    <h3>Shikhar Dhawan</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 6500, Avg - 45.12</p>
+                </div>
+                <!-- Player 8 -->
+                <div class="player-card">
+                    <img src="images/player8.jpg" alt="Ravindra Jadeja">
+                    <h3>Ravindra Jadeja</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 3000, Wickets - 150</p>
+                </div>
+                <!-- Player 9 -->
+                <div class="player-card">
+                    <img src="images/player9.jpg" alt="Suresh Raina">
+                    <h3>Suresh Raina</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 5000, Avg - 40.55</p>
+                </div>
+                <!-- Player 10 -->
+                <div class="player-card">
+                    <img src="images/player10.jpg" alt="Bhuvneshwar Kumar">
+                    <h3>Bhuvneshwar Kumar</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 220, Econ - 4.20</p>
+                </div>
+                <!-- Player 11 -->
+                <div class="player-card">
+                    <img src="images/player11.jpg" alt="Rishabh Pant">
+                    <h3>Rishabh Pant</h3>
+                    <p>Position: Wicketkeeper-Batsman</p>
+                    <p>Stats: Runs - 3200, Avg - 38.90, Dismissals - 110</p>
+                </div>
+                <!-- Player 12 -->
+                <div class="player-card">
+                    <img src="images/player12.jpg" alt="Yuzvendra Chahal">
+                    <h3>Yuzvendra Chahal</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 180, Econ - 5.00</p>
+                </div>
+                <!-- Player 13 -->
+                <div class="player-card">
+                    <img src="images/player13.jpg" alt="Shreyas Iyer">
+                    <h3>Shreyas Iyer</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 3000, Avg - 41.25</p>
+                </div>
+                <!-- Player 14 -->
+                <div class="player-card">
+                    <img src="images/player14.jpg" alt="Mohammed Shami">
+                    <h3>Mohammed Shami</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 190, Econ - 4.70</p>
+                </div>
+                <!-- Player 15 -->
+                <div class="player-card">
+                    <img src="images/player15.jpg" alt="Ajinkya Rahane">
+                    <h3>Ajinkya Rahane</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 3500, Avg - 44.00</p>
+                </div>
+                <!-- Player 16 -->
+                <div class="player-card">
+                    <img src="images/player16.jpg" alt="Axar Patel">
+                    <h3>Axar Patel</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 1500, Wickets - 120</p>
+                </div>
+                <!-- Player 17 -->
+                <div class="player-card">
+                    <img src="images/player17.jpg" alt="Rahul Tewatia">
+                    <h3>Rahul Tewatia</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 1200, Wickets - 60</p>
+                </div>
+                <!-- Player 18 -->
+                <div class="player-card">
+                    <img src="images/player18.jpg" alt="Sanju Samson">
+                    <h3>Sanju Samson</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 3200, Avg - 36.55</p>
+                </div>
+                <!-- Player 19 -->
+                <div class="player-card">
+                    <img src="images/player19.jpg" alt="Kuldeep Yadav">
+                    <h3>Kuldeep Yadav</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 140, Econ - 5.10</p>
+                </div>
+                <!-- Player 20 -->
+                <div class="player-card">
+                    <img src="images/player20.jpg" alt="Mayank Agarwal">
+                    <h3>Mayank Agarwal</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 2800, Avg - 39.60</p>
+                </div>
+                <!-- Player 21 -->
+                <div class="player-card">
+                    <img src="images/player21.jpg" alt="Prithvi Shaw">
+                    <h3>Prithvi Shaw</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 2600, Avg - 37.80</p>
+                </div>
+                <!-- Player 22 -->
+                <div class="player-card">
+                    <img src="images/player22.jpg" alt="Ishan Kishan">
+                    <h3>Ishan Kishan</h3>
+                    <p>Position: Wicketkeeper-Batsman</p>
+                    <p>Stats: Runs - 2500, Avg - 35.90, Dismissals - 90</p>
+                </div>
+                <!-- Player 23 -->
+                <div class="player-card">
+                    <img src="images/player23.jpg" alt="Deepak Chahar">
+                    <h3>Deepak Chahar</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 100, Econ - 4.80</p>
+                </div>
+                <!-- Player 24 -->
+                <div class="player-card">
+                    <img src="images/player24.jpg" alt="Navdeep Saini">
+                    <h3>Navdeep Saini</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 85, Econ - 5.00</p>
+                </div>
+                <!-- Player 25 -->
+                <div class="player-card">
+                    <img src="images/player25.jpg" alt="Krunal Pandya">
+                    <h3>Krunal Pandya</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 1800, Wickets - 90</p>
+                </div>
+                <!-- Player 26 -->
+                <div class="player-card">
+                    <img src="images/player26.jpg" alt="Washington Sundar">
+                    <h3>Washington Sundar</h3>
+                    <p>Position: All-Rounder</p>
+                    <p>Stats: Runs - 1400, Wickets - 75</p>
+                </div>
+                <!-- Player 27 -->
+                <div class="player-card">
+                    <img src="images/player27.jpg" alt="Shardul Thakur">
+                    <h3>Shardul Thakur</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 110, Econ - 5.20</p>
+                </div>
+                <!-- Player 28 -->
+                <div class="player-card">
+                    <img src="images/player28.jpg" alt="Manish Pandey">
+                    <h3>Manish Pandey</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 2900, Avg - 40.75</p>
+                </div>
+                <!-- Player 29 -->
+                <div class="player-card">
+                    <img src="images/player29.jpg" alt="Varun Chakravarthy">
+                    <h3>Varun Chakravarthy</h3>
+                    <p>Position: Bowler</p>
+                    <p>Stats: Wickets - 70, Econ - 4.90</p>
+                </div>
+                <!-- Player 30 -->
+                <div class="player-card">
+                    <img src="images/player30.jpg" alt="Nitish Rana">
+                    <h3>Nitish Rana</h3>
+                    <p>Position: Batsman</p>
+                    <p>Stats: Runs - 2700, Avg - 38.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2008 - 2024 Indian Premier League Fan Page</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Team grid styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px; /* Space between the boxes */
+}
+
+/* Team card styles */
+.team-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card img {
+    width: 100%; /* Adjust to fit the container */
+    height: auto;
+    max-width: 200px; /* Constrain the image size */
+    max-height: 200px; /* Constrain the image size */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 8px;
+}
+
+.team-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.team-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+/* Grid for players and teams */
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Player card */
+.player-card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.player-card img {
+    width: 150px; /* Consistent width */
+    height: 150px; /* Consistent height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 5px;
+}
+
+.player-card h3 {
+    margin: 10px 0;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Team Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom styles */
+        body {
+            padding-top: 56px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Bootstrap font stack */
+        }
+        .featured-player img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/ipl.png" alt="IPL Logo" style="height: 40px; margin-right: 10px;">
+                Indian Premier League
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="players.html">Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Match Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="winners.html">IPL Winners</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main" class="container">
+        <section class="mt-5">
+            <h2>About the Teams</h2>
+            <p>Welcome to the ultimate IPL fan page! Here, you'll find comprehensive information about all the teams competing in the IPL. Discover team histories, player profiles, and much more as you follow your favorite team throughout the season!</p>
+        </section>
+        <section class="mt-5">
+            <h2>Teams</h2>
+            <p>Explore detailed information about each IPL team, including their squad, key players, and past performances.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Royal Challengers Bangalore</li>
+                <li class="list-group-item">Mumbai Indians</li>
+                <li class="list-group-item">Chennai Super Kings</li>
+                <li class="list-group-item">Kolkata Knight Riders</li>
+                <li class="list-group-item">Delhi Capitals</li>
+                <li class="list-group-item">Sunrisers Hyderabad</li>
+                <li class="list-group-item">Punjab Kings</li>
+                <li class="list-group-item">Rajasthan Royals</li>
+            </ul>
+        </section>
+        <section class="mt-5">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest news from the IPL world!</p>
+            <ul class="list-group">
+                <li class="list-group-item">The Royal Challengers Bangalore have announced their new captain for the season! Stay tuned for more updates.</li>
+                <li class="list-group-item">Chennai Super Kings have made a big signing ahead of the new season. Check out the details on the teams page.</li>
+                <li class="list-group-item">The IPL schedule for the upcoming season has been released. Visit the schedule page for all match timings and venues.</li>
+                <li class="list-group-item">New player stats and records have been added. Visit the statistics page to find out more.</li>
+                <li class="list-group-item">Historical highlights of IPL seasons gone by are now available on our History page.</li>
+            </ul>
+        </section>
+        <section class="mt-5 featured-player">
+            <h2>Featured Player</h2>
+            <p>This season’s featured player is Virat Kohli from the Royal Challengers Bangalore. Known for his exceptional batting skills and leadership, Kohli has been a key player in the IPL for years.</p>
+            <center><img src="images/player1.jpg" alt="Virat Kohli" width="500" height="500"></center>  <br>
+            <p>With numerous records to his name, Kohli continues to inspire fans and players alike. Read more about his journey and achievements on the Players page.</p>
+        </section>
+        <section class="mt-5">
+            <h2>Upcoming Matches</h2>
+            <p>Check out the schedule for upcoming IPL matches and don’t miss out on any of the action!</p>
+            <ul class="list-group">
+                <li class="list-group-item">Royal Challengers Bangalore vs Mumbai Indians - August 30, 2024</li>
+                <li class="list-group-item">Chennai Super Kings vs Kolkata Knight Riders - September 2, 2024</li>
+                <li class="list-group-item">Delhi Capitals vs Rajasthan Royals - September 5, 2024</li>
+                <li class="list-group-item">Sunrisers Hyderabad vs Punjab Kings - September 8, 2024</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2008 - 2024 Indian Premier League Fan Page</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
